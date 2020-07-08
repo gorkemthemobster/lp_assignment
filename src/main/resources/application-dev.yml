@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/openw
+    username: test
+    password: test
+
+service:
+  weather: open-weather
+
+open-weather:
+  url: http://api.openweathermap.org/data/2.5/weather

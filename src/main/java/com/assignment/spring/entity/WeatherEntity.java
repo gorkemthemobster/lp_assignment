@@ -1,6 +1,7 @@
-package com.assignment.spring;
+package com.assignment.spring.entity;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "weather")
@@ -8,7 +9,7 @@ public class WeatherEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
 
     private String city;
 
@@ -16,11 +17,21 @@ public class WeatherEntity {
 
     private Double temperature;
 
-    public Integer getId() {
+    private LocalDateTime time;
+
+    public LocalDateTime getTime() {
+        return time;
+    }
+
+    public void setTime(LocalDateTime time) {
+        this.time = time;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

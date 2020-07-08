@@ -1,1 +1,11 @@
+spring:
+  datasource:
+    url: ${db.url}
+    username: ${db.username}
+    password: ${db.password}
 
+service:
+  weather: open-weather
+
+open-weather:
+  url: http://api.openweathermap.org/data/2.5/weather

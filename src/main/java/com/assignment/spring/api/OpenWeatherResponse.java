@@ -26,7 +26,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "name",
     "cod"
 })
-public class WeatherResponse {
+public class OpenWeatherResponse {
 
     @JsonProperty("coord")
     private Coord coord;
